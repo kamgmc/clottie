@@ -2,7 +2,7 @@ import {Actions} from "../actions";
 
 export const TOGGLE = 'TOGGLE';
 
-const IntroReducer = (state = false, action: Actions) => {
+const LoggedReducer = (state = false, action: Actions) => {
   switch (action.type) {
     case TOGGLE:
       return !state;
@@ -11,4 +11,4 @@ const IntroReducer = (state = false, action: Actions) => {
   }
 }
 
-export default IntroReducer;
+export default LoggedReducer;

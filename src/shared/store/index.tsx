@@ -3,7 +3,7 @@ import AppReducers from "./reducers";
 import {loadState, saveState} from "./LocalStorage";
 
 export type AppState = {
-  intro: boolean;
+  isLogged: boolean;
 };
 
 /**
@@ -36,7 +36,7 @@ const store = createStore(
 store.subscribe(() => {
   const state = store.getState();
   saveState({
-    intro: state.intro
+    isLogged: state.isLogged
   });
 });
 

@@ -1,0 +1,10 @@
+html {
+  font-family: Arial;
+}
+
+.clottie-button {
+  text-transform: none;
+  font-size: .688em;
+  letter-spacing: 0;
+  --box-shadow: none;
+}

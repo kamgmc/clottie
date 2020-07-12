@@ -1,0 +1,56 @@
+/*  Slides configuration  */
+ion-slides {
+  height: 80%;
+  color: var(--ion-color-primary);
+}
+
+.swiper-pagination-bullet {
+  background: var(--ion-color-primary-tint);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--ion-color-primary);
+}
+
+.clottie-slide {
+  flex-direction: column;
+}
+
+.slide-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.slide-title-offset {
+  margin-bottom: calc(1.5em + 40px);
+}
+
+.slide-img {
+  height: 10rem;
+  margin-bottom: 40px;
+}
+
+.slide-description {
+  font-size: .688em;
+  max-width: 256px;
+}
+
+@media (max-width: 576px) {
+  .slide-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 48px;
+  }
+
+  .slide-img {
+    height: 9rem;
+  }
+}
+
+/*  Buttons   */
+.clottie-button {
+  width: 100%;
+  max-width: 352px;
+}

@@ -1,0 +1,22 @@
+.logo-row {
+  height: 70vh;
+}
+
+.logo-row ion-col {
+  height: 100%;
+}
+
+.auth-img {
+  max-width: 160px;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-button:first-child {
+  margin-bottom: 20px;
+}

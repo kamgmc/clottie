@@ -1,9 +1,9 @@
 import {combineReducers} from "redux";
-import IntroReducer from "./introReducer";
+import LoggedReducer from "./LoggedReducer";
 import {AppState} from "../index";
 
 const AppReducers = combineReducers<AppState>({
-  intro: IntroReducer
+  isLogged: LoggedReducer
 });
 
 export default AppReducers;

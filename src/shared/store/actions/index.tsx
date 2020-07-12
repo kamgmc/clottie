@@ -1,4 +1,4 @@
-import {toggleIntro} from "./toggleIntro";
+import {toggleIsLogged} from "./toggleIsLogged";
 
 export type Actions =
-  | ReturnType<typeof toggleIntro>;
+  | ReturnType<typeof toggleIsLogged>;

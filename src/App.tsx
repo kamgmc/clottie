@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import {IonApp, IonRouterOutlet} from '@ionic/react';
 import {IonReactRouter} from '@ionic/react-router';
 /* Core CSS required for Ionic components to work properly */
@@ -25,15 +25,17 @@ import {AppState} from "./shared/store";
 import Auth from "./Auth/Auth";
 
 const App: React.FC = () => {
-  const isLogged:boolean = useSelector(
-    (state: AppState) => state.intro
+  const isLogged: boolean = useSelector(
+    (state: AppState) => state.isLogged
   );
   return (
     <IonApp>
       <IonReactRouter>
         <IonRouterOutlet>
-          {/*<Route path="/" exact={true} render={() => isLogged? <Home/>: <Tour/>}/>
-          <Route path="/auth" exact={true} component={Auth}/>*/}
+          <Switch>
+            <Route path="/" exact={true} render={() => isLogged ? <Home/> : <Tour/>}/>
+            <Route path="/auth" exact={true} component={Auth}/>
+          </Switch>
         </IonRouterOutlet>
       </IonReactRouter>
     </IonApp>
